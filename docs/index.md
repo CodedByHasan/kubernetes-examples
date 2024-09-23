@@ -1,3 +1,3 @@
 # Kubernetes Examples
 
-This repository provides examples of kubernetes depployments.
+This repository provides examples of Kubernetes deployments.

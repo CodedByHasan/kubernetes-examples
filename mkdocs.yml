@@ -4,4 +4,7 @@ nav:
   - Deployments:
       - deployments/deploy-grafana.md
       - deployments/deploy-tomcat.md
-theme: readthedocs
+      - deployments/deploy-node.md
+theme:
+  name: readthedocs
+  color_mode: dark
