@@ -6,5 +6,4 @@ nav:
       - deployments/deploy-tomcat.md
       - deployments/deploy-node.md
 theme:
-  name: readthedocs
-  color_mode: dark
+  name: material
