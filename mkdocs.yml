@@ -1,0 +1,9 @@
+site_name: Kubernetes Examples
+nav:
+  - Home: index.md
+  - Deployments:
+      - deployments/deploy-grafana.md
+      - deployments/deploy-tomcat.md
+      - deployments/deploy-node.md
+theme:
+  name: material
