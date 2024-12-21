@@ -1,7 +1,5 @@
 # Kubernetes Examples
 
-![Github Workflow](https://github.com/codedByHasan/kubernetes-examples/actions/workflows/gh-pages-deploy.yml/badge.svg)
-
 A repository containing examples of deployments using [Kubernetes](https://kubernetes.io/).
 
 ## Getting started
