@@ -2,7 +2,7 @@
 
 Deploy Grafana and expose it using NodePort service.
 
-```yml
+```yaml
 ---
 apiVersion: apps/v1
 kind: Deployment

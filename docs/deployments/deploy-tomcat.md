@@ -2,7 +2,8 @@
 
 Deploy Tomcat and expose it using a NodePort Service.
 
-```yml
+```yaml
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:

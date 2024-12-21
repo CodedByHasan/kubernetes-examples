@@ -2,7 +2,8 @@
 
 Deploy Node and expose it using NodePort.
 
-```yml
+```yaml
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
