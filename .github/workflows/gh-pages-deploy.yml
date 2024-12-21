@@ -25,7 +25,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Deploy to GitHub Pages on ${GITHUB_REF_NAME}
+      - name: Deploy to GitHub Pages on $GITHUB_REF_NAME
         run: mkdocs gh-deploy --force --remote-branch ${GITHUB_REF_NAME}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
