@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize]
 
 jobs:
   build:
@@ -41,7 +39,7 @@ jobs:
     needs: build
     permissions:
       contents: write
-      id-token: write
+      id-token: write # to verify the deployment originates from an appropriate source
       pages: write
     runs-on: ubuntu-latest
 
