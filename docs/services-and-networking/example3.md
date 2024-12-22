@@ -39,4 +39,4 @@ kubectl -n ns-ckad17-svcn expose pod <target-pod-b>
         --name=lb2-ckad17-svcn
 ```
 
-Once deployed, edit service to use specified node port.
+Once deployed, edit service to use specified node ports.
