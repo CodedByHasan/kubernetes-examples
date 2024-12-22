@@ -2,7 +2,7 @@
 
 ## Question
 
-Create:
+Create the following:
 
 - A service `frontend-ckad-svcn` to expose the frontend pods outside the cluster on port 31100.
 - A service `backend-ckad-svcn` to make backend pods to be accessible within the cluster.
