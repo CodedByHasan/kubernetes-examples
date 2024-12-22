@@ -37,7 +37,8 @@ Using `kubectl`:
 kubectl expose pod <pod-name>
         --type=NodePort
         --name=frontend-ckad-svcn
-        --namespace=app-ckad --port=80
+        --namespace=app-ckad
+        --port=80
         --target-port=80
         --node-port=31100
 ```
@@ -66,7 +67,8 @@ Using `kubectl`:
 ```bash
 kubectl expose pod <pod-name>
         --name=backend-ckad-svcn
-        --namespace=app-ckad --port=80
+        --namespace=app-ckad
+        --port=80
         --target-port=80
 ```
 
