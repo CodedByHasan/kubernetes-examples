@@ -1,10 +1,16 @@
 site_name: Kubernetes Examples
+
 nav:
   - Home: index.md
   - Deployments:
       - deployments/deploy-grafana.md
       - deployments/deploy-tomcat.md
       - deployments/deploy-node.md
+  - Services and Networking:
+      - services-and-networking/example1.md
+      - services-and-networking/example2.md
+      - services-and-networking/example3.md
+
 theme:
   name: material
   highlight: dracula # Code highlighting theme
@@ -29,3 +35,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
