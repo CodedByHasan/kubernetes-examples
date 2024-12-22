@@ -15,6 +15,7 @@ Create:
 A service `frontend-ckad-svcn` to expose the frontend pods _outside_ the cluster on port 31100.
 
 ```yaml
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -48,6 +49,7 @@ kubectl expose pod <pod-name>
 A service `backend-ckad-svcn` to make backend pods to be accessible _within_ the cluster:
 
 ```yaml
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -82,6 +84,7 @@ kubectl expose pod <pod-name>
 A policy `database-ckad-svcn` to limit access of database pods only to backend pods:
 
 ```yaml
+---
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

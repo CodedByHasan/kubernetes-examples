@@ -7,6 +7,7 @@ nav:
       - deployments/deploy-node.md
   - Services and Networking:
       - services-and-networking/example1.md
+      - services-and-networking/example2.md
 theme:
   name: material
   highlight: dracula # Code highlighting theme
