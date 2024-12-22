@@ -6,10 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -23,7 +24,28 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Build documentation
+        run: |
+          mkdocs build --clean
+          mkdocs --version
+
+  deploy:
+    needs: build
+    permissions:
+      contents: write
+      id-token: write
+    runs-on: ubuntu-latest
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force --remote-branch ${GITHUB_REF_NAME}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/deploy-pages@v4
