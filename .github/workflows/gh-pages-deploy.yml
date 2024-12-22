@@ -50,6 +50,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+
       - name: Fix permissions
         run: |
           chmod -c -R +rX "site/" | while read line; do
