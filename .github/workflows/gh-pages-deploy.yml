@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize]
 
 jobs:
-  build:
+  deploy-docs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
