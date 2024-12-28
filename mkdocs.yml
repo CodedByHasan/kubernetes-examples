@@ -6,10 +6,17 @@ nav:
       - deployments/deploy-grafana.md
       - deployments/deploy-tomcat.md
       - deployments/deploy-node.md
+  - Application Deployment:
+      - application-deployment/example1.md
+      - application-deployment/example2.md
   - Services and Networking:
       - services-and-networking/example1.md
       - services-and-networking/example2.md
       - services-and-networking/example3.md
+      - services-and-networking/example4.md
+  - Application Environment, Configuration & Security:
+      - app-env-config-and-security/example1.md
+      - app-env-config-and-security/example2.md
 
 theme:
   name: material
