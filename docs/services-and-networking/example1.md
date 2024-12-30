@@ -1,4 +1,4 @@
-# Example 1
+# Exposing Pods & Creating Policy
 
 ## Question
 

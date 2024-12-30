@@ -1,4 +1,4 @@
-# Example 4
+# Troubleshooting Ingress
 
 ## Question
 

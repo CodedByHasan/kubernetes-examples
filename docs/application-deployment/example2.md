@@ -1,4 +1,4 @@
-# Uninstall Chart with Vulnerable Image
+# Uninstall Helm Chart
 
 ## Question
 
