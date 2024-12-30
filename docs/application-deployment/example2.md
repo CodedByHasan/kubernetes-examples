@@ -1,4 +1,4 @@
-# Example 2
+# Uninstall Chart with Vulnerable Image
 
 ## Question
 
