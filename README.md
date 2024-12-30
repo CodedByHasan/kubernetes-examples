@@ -1,6 +1,6 @@
 # Kubernetes Examples
 
-A repository containing examples of deployments using [Kubernetes](https://kubernetes.io/).
+This repository provides example questions used in preparation for [CKAD](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/).
 
 ## Getting started
 
@@ -22,4 +22,4 @@ mkdocs serve
 
 ## Acknowledgements
 
-These examples are part of the [KodeKloud Engineer](https://engineer.kodekloud.com).
+The examples are taken from [KodeKloud Engineer](https://engineer.kodekloud.com/) and [KodeKloud](https://kodekloud.com/).

@@ -1,4 +1,4 @@
-# Example 2
+# Exposing Deployment & Creating Network Policy
 
 ## Question
 

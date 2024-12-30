@@ -1,4 +1,4 @@
-# Example 3
+# Create a Load Balancer
 
 ## Question
 
