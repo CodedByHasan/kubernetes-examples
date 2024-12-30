@@ -2,13 +2,12 @@ site_name: Kubernetes Examples
 
 nav:
   - Home: index.md
-  - Deployments:
-      - deployments/deploy-grafana.md
-      - deployments/deploy-tomcat.md
-      - deployments/deploy-node.md
   - Application Deployment:
       - application-deployment/example1.md
       - application-deployment/example2.md
+      - application-deployment/deploy-grafana.md
+      - application-deployment/deploy-tomcat.md
+      - application-deployment/deploy-node.md
   - Services and Networking:
       - services-and-networking/example1.md
       - services-and-networking/example2.md
