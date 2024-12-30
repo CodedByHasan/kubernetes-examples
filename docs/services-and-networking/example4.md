@@ -2,15 +2,15 @@
 
 ## Question
 
-We have deployed an application in the green-space namespace. we also deployed the ingress controller
-and the ingress resource.
+There is an application deployed in the green-space namespace. There is also an ingress controller
+and the ingress resource deployed.
 
-However, currently, the ingress controller is not working as expected. Inspect the ingress definitions
+However, the ingress controller is not working as expected. Inspect the ingress definitions
 and troubleshoot the issue so that the services are accessible as per the ingress resource definition.
 
 Also, update the path for the app-wear-service to `/app-wear` and app-video-service to `/app-video`.
 
-> Note: You are allowed to edit or delete the resources related to ingress but do not change the pods.
+> Note: You are allowed to edit or delete the resources related to ingress but do NOT change the pods.
 
 ## Solution
 
@@ -39,11 +39,11 @@ F0316 08:03:28.111614 57 main.go:83] No service with name default-backend-servic
 
 You see an error msg saying _"No service with name default-backend-service found in namespace default"_.
 
-We do not have the service with that name in the default namespace, so we need to edit the ingress controller
-deployment to use the service that we have i.e. default-backend-service in the green-space namespace.
+There is no service with that name in the default namespace. Edit the ingress controller deployment
+to use the service that we have i.e. default-backend-service in the green-space namespace.
 
-To create the controller deployment with correct backend service, first save the deployment in a file, delete
-the controller deployment, edit the file and create the deployment.
+To create the controller deployment with correct backend service, first save the deployment in a file,
+delete the controller deployment, edit the file and create the deployment.
 
 Save the deployment in file
 

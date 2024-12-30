@@ -2,11 +2,11 @@
 
 ## Question
 
-A web application running on cluster2 called robox-west-apd on the fusion-apd-x1df5 namespace. The Ops team
-has created a new service account (SA) with a set of permissions for this web application. Update the newly
-created SA for this deployment.
+A web application called `robox-west-apd` on the `fusion-apd-x1df5` namespace. The Ops team has
+created a new service account (SA) with a set of permissions for this web application. Update
+the newly created SA for this deployment.
 
-Also, change the strategy type to `Recreate`, so it will delete all the pods immediately and update the newly
+Also, change the strategy type to _Recreate_, so it will delete all the pods immediately and update the newly
 created SA to all the pods.
 
 ## Solution

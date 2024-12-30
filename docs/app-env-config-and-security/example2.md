@@ -2,7 +2,7 @@
 
 ## Question
 
-We have a sample CRD at /root/ckad10-crd-aecs.yaml which should have the following validations:
+There is a sample CRD at /root/ckad10-crd-aecs.yaml which should have the following validations:
 
 - `destinationName`, `country`, and `city` must be string types.
 - `pricePerNight` must be an integer between 50 and 5000.
