@@ -34,3 +34,9 @@ spec:
                 port:
                   number: 8282
 ```
+
+!!! note
+
+    For more information regarding `rewrite-target` annotation, see [ingress-nginx](https://kubernetes.github.io/ingress-nginx/examples/rewrite/) documentation.
+    Minimal ingress resource example is also provided in the [Kubernetes](https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource)
+    documentation.

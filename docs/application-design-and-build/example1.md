@@ -37,7 +37,7 @@ metadata:
   name: cloudstack-pvc
 spec:
   storageClassName: manual
-  volumeName: cloudstack-pv # set volumeName to PV
+  volumeName: cloudstack-pv # set volumeName to PV defined above
   accessModes:
     - ReadWriteOnce
   resources:
