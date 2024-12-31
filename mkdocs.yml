@@ -2,18 +2,12 @@ site_name: Kubernetes Examples
 
 nav:
   - Home: index.md
-<<<<<<< HEAD
   - Application Design and Build:
       - application-design-and-build/example1.md
   - Application Deployment:
       - application-deployment/example1.md
       - application-deployment/example2.md
       - application-deployment/example3.md
-=======
-  - Application Deployment:
-      - application-deployment/example1.md
-      - application-deployment/example2.md
->>>>>>> origin
       - application-deployment/deploy-grafana.md
       - application-deployment/deploy-tomcat.md
       - application-deployment/deploy-node.md
@@ -22,10 +16,7 @@ nav:
       - services-and-networking/example2.md
       - services-and-networking/example3.md
       - services-and-networking/example4.md
-<<<<<<< HEAD
       - services-and-networking/example5.md
-=======
->>>>>>> origin
   - Application Environment, Configuration & Security:
       - app-env-config-and-security/example1.md
       - app-env-config-and-security/example2.md
