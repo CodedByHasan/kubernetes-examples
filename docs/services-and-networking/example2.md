@@ -61,7 +61,7 @@ spec:
     type: ClusterIP # Don't need to specify as this is default service
 ```
 
-## Create Network Policy
+### Create Network Policy
 
 Use the following to create the network policy:
 
