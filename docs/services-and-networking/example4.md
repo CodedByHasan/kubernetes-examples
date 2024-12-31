@@ -45,14 +45,15 @@ to use the service that we have i.e. default-backend-service in the green-space 
 To create the controller deployment with correct backend service, first save the deployment in a file,
 delete the controller deployment, edit the file and create the deployment.
 
-Save the deployment in file
+Save the deployment in file:
 
 ```bash
 kubectl get -n ingress-nginx deployments.apps ingress-nginx-controller -o yaml >> ing-control.yaml
 ```
 
+Delete the deployment:
+
 ```bash
-Delete the deployment.
 kubectl delete -n ingress-nginx deploy ingress-nginx-controller
 ```
 

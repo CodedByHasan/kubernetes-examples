@@ -2,7 +2,7 @@
 
 ## Question
 
-One co-worker deployed an nginx helm chart on the cluster3 server called lvm-crystal-apd. A new update is pushed
+One co-worker deployed an nginx helm chart on the cluster3 server called `lvm-crystal-apd`. A new update is pushed
 to the helm chart, and the team wants you to update the helm repository to fetch the new changes.
 
 After updating the helm chart, upgrade the helm chart version to above 13.2.9 and increase the replica count to 2.
