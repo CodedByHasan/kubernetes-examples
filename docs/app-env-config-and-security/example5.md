@@ -13,9 +13,7 @@ Create a custom resource my-anime of kind Anime with the below specifications:
 
 ```bash
 kubectl get crd | grep -i anime
-```
 
-```
 animes.animes.k8s.io
 ```
 
@@ -25,7 +23,7 @@ kubectl get crd animes.animes.k8s.io \
                  | jq .spec.versions[].schema.openAPIV3Schema.properties.spec.properties
 ```
 
-```
+```json
 {
   "animeName": {
     "type": "string"
@@ -36,15 +34,14 @@ kubectl get crd animes.animes.k8s.io \
     "type": "integer"
   }
 }
-
 ```
 
 ```bash
-k api-resources | grep anime
+kubectl api-resources | grep anime
 animes                            an           animes.k8s.io/v1alpha1                 true         Anime
 ```
 
-cat << YAML | kubectl apply -f -
+Create a Anime custom resource from the following manifest:
 
 ```yaml
 apiVersion: animes.k8s.io/v1alpha1

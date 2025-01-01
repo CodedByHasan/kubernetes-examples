@@ -3,15 +3,18 @@
 ## Question
 
 In the ckad14-sa-projected namespace, configure the ckad14-api-pod Pod to include a projected volume named vault-token.
+
 Mount the service account token to the container at /var/run/secrets/tokens, with an expiration time of 7000 seconds.
+
 Additionally, set the intended audience for the token to vault and path to vault-token.
 
 ## Solution
 
 ```bash
-k get pod -n ckad14-sa-projected ckad14-api-pod -o yaml > ckad-pro-vol.yaml
-cat ckad-pro-vol.yaml
+kubectl get pod -n ckad14-sa-projected ckad14-api-pod -o yaml > ckad-pro-vol.yaml
 ```
+
+Update the pod manifest like so:
 
 ```yaml
 apiVersion: v1
@@ -28,8 +31,8 @@ spec:
 .
 .
    volumeMounts:                              # Added
-    - mountPath: /var/run/secrets/tokens       # Added
-      name: vault-token                        # Added
+    - mountPath: /var/run/secrets/tokens      # Added
+      name: vault-token                       # Added
 .
 .
 .
@@ -45,6 +48,8 @@ spec:
           audience: vault               # Added
 ```
 
+Replace the pod with the updated manifest:
+
 ```bash
-k replace -f ckad-pro-vol.yaml --force
+kubectl replace -f ckad-pro-vol.yaml --force
 ```
