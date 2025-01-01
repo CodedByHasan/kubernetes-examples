@@ -44,6 +44,7 @@ animes                            an           animes.k8s.io/v1alpha1           
 Create a Anime custom resource from the following manifest:
 
 ```yaml
+---
 apiVersion: animes.k8s.io/v1alpha1
 kind: Anime
 metadata:

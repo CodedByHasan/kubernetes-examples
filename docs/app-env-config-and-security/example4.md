@@ -17,6 +17,7 @@ kubectl get pod -n ckad14-sa-projected ckad14-api-pod -o yaml > ckad-pro-vol.yam
 Update the pod manifest like so:
 
 ```yaml
+---
 apiVersion: v1
 kind: Pod
 metadata:

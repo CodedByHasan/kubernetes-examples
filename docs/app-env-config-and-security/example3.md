@@ -18,6 +18,7 @@ kubectl get pods -n ckad12-ctm-sa-aecs ckad12-ctm-nginx-aecs -o yaml > ckad-cust
 ```
 
 ```yaml
+---
 apiVersion: v1
 kind: Pod
 metadata:
