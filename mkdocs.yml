@@ -20,6 +20,9 @@ nav:
   - Application Environment, Configuration & Security:
       - app-env-config-and-security/example1.md
       - app-env-config-and-security/example2.md
+      - app-env-config-and-security/example3.md
+      - app-env-config-and-security/example4.md
+      - app-env-config-and-security/example5.md
 
 theme:
   name: material
