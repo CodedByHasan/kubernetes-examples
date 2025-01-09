@@ -17,6 +17,7 @@ nav:
       - services-and-networking/example3.md
       - services-and-networking/example4.md
       - services-and-networking/example5.md
+      - services-and-networking/example6.md
   - Application Environment, Configuration & Security:
       - app-env-config-and-security/example1.md
       - app-env-config-and-security/example2.md
